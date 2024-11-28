@@ -19,7 +19,7 @@ export default function ChatLayoutWrapper({
   user,
   children,
 }: Props) {
-  const { isLoaded, isSignedIn, userId } = useAuth();
+  const { isLoaded, isSignedIn } = useAuth();
   const [shouldShowLoading, setShouldShowLoading] = useState(true);
 
   const userInfo = usePreloadedQuery(user);

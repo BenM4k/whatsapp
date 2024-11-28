@@ -79,27 +79,6 @@ export async function POST(req: Request) {
         });
       }
 
-    // case "user.updated":
-    //   try {
-    //     await userUpdate({
-    //       email: payload?.data?.email_addresses?.[0]?.email_address,
-    //       first_name: payload?.data?.first_name,
-    //       last_name: payload?.data?.last_name,
-    //       profile_image_url: payload?.data?.profile_image_url,
-    //       user_id: payload?.data?.id,
-    //     });
-
-    //     return NextResponse.json({
-    //       status: 200,
-    //       message: "User info updated",
-    //     });
-    //   } catch (error: any) {
-    //     return NextResponse.json({
-    //       status: 400,
-    //       message: error.message,
-    //     });
-    //   }
-
     default:
       return new Response("Error occured -- unhandeled event type", {
         status: 400,
